@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const links = [
   { name: "Home", url: "#home" },
@@ -9,7 +10,9 @@ const links = [
 export default function Navigation() {
   return (
     <div className="flex h-20 w-full bg-white/90 dark:bg-black/70 dark:text-white fixed border-b border-gray-800 items-center ">
-      <p className="ml-5 font-semibold">PewVegas</p>
+      <div className="ml-5 ">
+        <img src={logo} alt="logo" className="w-24 h-24" />
+      </div>
 
       <div className="ml-auto mr-3">
         {links.map((link) => (

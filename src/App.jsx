@@ -61,8 +61,14 @@ function App() {
           </a>
         </section>
 
-        <div className="bg-red-300 mt-auto mb-12 flex">
-          <p>asd</p>
+        <div className="mt-auto mb-12 flex">
+          <p>
+            <img
+              src="https://assets8.lottiefiles.com/private_files/lf30_igelfovr.json"
+              alt=""
+              className="w-24 h-24"
+            />
+          </p>
           <p>asd</p>
           <p>asd</p>
           <p>asd</p>
