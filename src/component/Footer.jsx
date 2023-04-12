@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="dark:bg-slate-900 dark:text-white p-4 bg-white">
+    <footer className="dark:bg-slate-900 dark:text-white p-4 bg-white w-screen">
       <div className="m-3">
         {/* <p>sd</p> */}
         {/* <p>dss</p> */}

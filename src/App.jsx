@@ -29,9 +29,8 @@ const services = [
 ];
 function App() {
   return (
-    <>
+    <main className="overflow-x-hidden">
       <Navigation />
-
       <img
         src={image}
         className="w-screen object-cover h-screen fixed -z-50"
@@ -41,18 +40,18 @@ function App() {
 
       <div
         id="home"
-        className="min-h-screen pt-16 flex md:flex-row flex-col bg-black/60 items-center"
+        className="min-h-screen w-full overflow-hidden pt-16 flex md:flex-row flex-col bg-black/60 items-center"
       >
-        <section className="flex flex-col w-full md:w-1/2 ml-[13%]">
-          <h1 className="md:text-6xl font-bold text-4xl text-white">
+        <section className="flex flex-col w-[94%] mt-[30%] md:mt-5  md:w-1/2 md:ml-[13%]">
+          <h1 className="md:text-6xl font-bold text-3xl text-white">
             PEW VEGAS SOLUTIONS COMPANY
           </h1>
 
-          <p className="my-11 text-lg text-white">
+          <p className="my-11 text-lg text-white w-full">
             We provide effective and reliable information technology solutions
             to businesses, organizations, and Government agencies to connect
             with clients, integrate with vendors, and empower employees to work
-            to their fullest potential
+            to their fullest potential.
           </p>
 
           <a
@@ -91,7 +90,7 @@ function App() {
       </div>
 
       <div
-        class="dark:bg-gray-800 bg-gray-100 text-gray-900 min-h-screen"
+        class="dark:bg-gray-800 w-screen bg-gray-100 text-gray-900 min-h-screen"
         id="services"
       >
         <section class="flex flex-col w-full md:w-[90%] mx-auto pt-16">
@@ -122,7 +121,7 @@ function App() {
           <div class="flex flex-col md:flex-row flex-wrap w-full justify-between">
             {services.map((service) => (
               <div
-                class="rounded-md shadow-md flex flex-col p-4 w-full md:w-[30%] dark:bg-gray-900 md:mx-1 bg-white dark:text-white"
+                class="rounded-md shadow-md w-[94%] mx-auto mb-3 flex flex-col p-4 md:w-[30%] dark:bg-gray-900 md:mx-1 bg-white dark:text-white"
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
@@ -147,7 +146,7 @@ function App() {
       </div>
 
       <div
-        class="dark:bg-gray-800 bg-gray-100 text-gray-900 min-h-screen"
+        class="dark:bg-gray-800 w-screen bg-gray-100 text-gray-900 min-h-screen"
         id="contact"
       >
         <section class="flex flex-col w-[90%] mx-auto  md:flex-row border-gray-800 items-center py-5 pt-16">
@@ -187,8 +186,8 @@ function App() {
 
               <div class="flex flex-col m-4">
                 <h5 class="dark:text-white font-bold text-xl">Others</h5>
-                <p class="dark:text-white">123@nvhub.org</p>
-                <p class="dark:text-white">info.norvushub.org</p>
+                <p class="dark:text-white">pewvegas@gmail.com</p>
+                <p class="dark:text-white">info.pewvegas.com</p>
               </div>
             </div>
           </div>
@@ -245,7 +244,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </main>
   );
 }
 
