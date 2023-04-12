@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navigation from "./component/Navigation";
+import Footer from "./component/Footer";
 import image from "./assets/annie-spratt-QckxruozjRg-unsplash.jpg";
 
 const services = [
@@ -8,21 +9,22 @@ const services = [
     name: "Software Development",
     icon: "far fa-globe",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas alias sint repudiandae vero praesentium tenetur!",
+      "Ecommerce Platform, Website Design and Development, Mobile Apps and Stand-alone Application Development",
+    list: ["item 1", "item 2", "item 3"],
   },
   {
     id: 2,
     name: "Smart Home Integrations",
     icon: "far fa-cogs",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas alias sint repudiandae vero praesentium tenetur!",
+      "Home Assistant, Alexa, Homebridge, Siri, Google Assistant, Home Media Servers, Personal Backup Servers.",
   },
   {
     id: 3,
     name: "Consultancy Hardware and Networking",
     icon: "far fa-desktop",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas alias sint repudiandae vero praesentium tenetur!",
+      "VPN Setup, Network setup and Architecture, Security and Access Controls",
   },
 ];
 function App() {
@@ -39,14 +41,14 @@ function App() {
 
       <div
         id="home"
-        className="min-h-screen pt-16 flex md:flex-row flex-col text-white bg-black/60 items-center"
+        className="min-h-screen pt-16 flex md:flex-row flex-col bg-black/60 items-center"
       >
         <section className="flex flex-col w-full md:w-1/2 ml-[13%]">
-          <h1 className="md:text-6xl font-bold text-4xl">
+          <h1 className="md:text-6xl font-bold text-4xl text-white">
             PEW VEGAS SOLUTIONS COMPANY
           </h1>
 
-          <p className="my-11 text-lg">
+          <p className="my-11 text-lg text-white">
             We provide effective and reliable information technology solutions
             to businesses, organizations, and Government agencies to connect
             with clients, integrate with vendors, and empower employees to work
@@ -54,24 +56,37 @@ function App() {
           </p>
 
           <a
-            href="#more"
-            className="py-4 px-11 border border-white mr-auto font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out"
+            href="#contact"
+            className="py-4 px-11 border text-white border-white mr-auto font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out"
           >
-            Learn More
+            Contact Us
           </a>
         </section>
 
         <div className="mt-auto mb-12 flex">
-          <p>
+          <a href="#" className="text-transparent">
             <img
-              src="https://assets8.lottiefiles.com/private_files/lf30_igelfovr.json"
+              src="https://i.pinimg.com/originals/a2/5f/4f/a25f4f58938bbe61357ebca42d23866f.png"
               alt=""
-              className="w-24 h-24"
+              className="w-8 h-8"
             />
-          </p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
+          </a>
+
+          <a href="#" className="text-transparent mx-5">
+            <img
+              src="https://th.bing.com/th/id/R.3f7189662f19f8318fc75252deee723a?rik=Qa956Np1tp8Zcg&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f06%2fTwitter-Logo.png&ehk=6ekNd2ZmhpvFDGRZF19QcumP9fb8pZRkwrbFbK%2bpULA%3d&risl=&pid=ImgRaw&r=0"
+              alt=""
+              className="w-8 h-8"
+            />
+          </a>
+
+          <a href="#" className="text-transparent">
+            <img
+              src="https://th.bing.com/th/id/R.c3fcc390427d68b89647e834adf7fc87?rik=5W%2fa9g9fys8WDg&pid=ImgRaw&r=0"
+              alt=""
+              className="w-8 h-8"
+            />
+          </a>
         </div>
       </div>
 
@@ -117,14 +132,14 @@ function App() {
 
                 <h3 class="text-xl font-semibold my-3">{service.name}</h3>
 
-                <p class="text-base">{service.description}</p>
+                <ul class="text-base">{service.description}</ul>
 
-                <a
+                {/* <a
                   href="#"
                   class="ml-auto text-red-600 dark:text-red-400 mt-5 mr-2 text-base"
                 >
                   Know More
-                </a>
+                </a> */}
               </div>
             ))}
           </div>
@@ -160,14 +175,14 @@ function App() {
               <div class="flex flex-col m-4 w-1/2">
                 <h5 class="dark:text-white font-bold text-xl">Address</h5>
                 <p class="dark:text-white">
-                  111 Casticated St, New Site, Takoradi
+                  David N. Akuamoah Wiredu Building Salisbury Aly.
                 </p>
               </div>
 
               <div class="flex flex-col m-4 w-1/2">
                 <h5 class="dark:text-white font-bold text-xl">Phone</h5>
-                <p class="dark:text-white">+233 866788990</p>
-                <p class="dark:text-white">+233 246807543</p>
+                <p class="dark:text-white">+233 244982690</p>
+                <p class="dark:text-white">+233 269625787</p>
               </div>
 
               <div class="flex flex-col m-4">
@@ -228,6 +243,8 @@ function App() {
           </div>
         </section>
       </div>
+
+      <Footer />
     </>
   );
 }

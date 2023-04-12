@@ -10,11 +10,11 @@ const links = [
 export default function Navigation() {
   return (
     <div className="flex h-20 w-full bg-white/90 dark:bg-black/70 dark:text-white fixed border-b border-gray-800 items-center ">
-      <div className="ml-5 ">
+      <div className="ml-5 flex-1">
         <img src={logo} alt="logo" className="w-24 h-24" />
       </div>
 
-      <div className="ml-auto mr-3">
+      <div className="flex mr-3 flex-1 items-center justify-center">
         {links.map((link) => (
           <a href={link?.url} className="mx-3 font-semibold">
             {link?.name}
