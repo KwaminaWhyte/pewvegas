@@ -17,7 +17,7 @@ const services = [
     name: "Smart Home Integrations",
     icon: "far fa-cogs",
     description:
-      "Home Assistant, Alexa, Homebridge, Siri, Google Assistant, Home Media Servers, Personal Backup Servers.",
+      "Home Assistant, Alexa, Homebridge, Siri, Google Assistant, Home Media Servers, Personal Backup Servers, Home kits.",
   },
   {
     id: 3,
@@ -43,8 +43,8 @@ function App() {
         className="min-h-screen w-full overflow-hidden pt-16 flex md:flex-row flex-col bg-black/60 items-center"
       >
         <section className="flex flex-col w-[94%] mt-[30%] md:mt-5  md:w-1/2 md:ml-[13%]">
-          <h1 className="md:text-6xl font-bold text-3xl text-white">
-            PEW VEGAS SOLUTIONS COMPANY
+          <h1 className="md:text-5xl font-semibold text-3xl text-white">
+            PEW VEGAS SOLUTIONS
           </h1>
 
           <p className="my-11 text-lg text-white w-full">
@@ -56,37 +56,13 @@ function App() {
 
           <a
             href="#contact"
-            className="py-4 px-11 border text-white border-white mr-auto font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out"
+            className="py-4 px-11 rounded-md border text-white border-white mr-auto font-semibold hover:bg-white hover:text-black transition duration-300 ease-in-out"
           >
             Contact Us
           </a>
         </section>
 
-        <div className="mt-auto mb-12 flex">
-          <a href="#" className="text-transparent">
-            <img
-              src="https://i.pinimg.com/originals/a2/5f/4f/a25f4f58938bbe61357ebca42d23866f.png"
-              alt=""
-              className="w-8 h-8"
-            />
-          </a>
-
-          <a href="#" className="text-transparent mx-5">
-            <img
-              src="https://th.bing.com/th/id/R.3f7189662f19f8318fc75252deee723a?rik=Qa956Np1tp8Zcg&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f06%2fTwitter-Logo.png&ehk=6ekNd2ZmhpvFDGRZF19QcumP9fb8pZRkwrbFbK%2bpULA%3d&risl=&pid=ImgRaw&r=0"
-              alt=""
-              className="w-8 h-8"
-            />
-          </a>
-
-          <a href="#" className="text-transparent">
-            <img
-              src="https://th.bing.com/th/id/R.c3fcc390427d68b89647e834adf7fc87?rik=5W%2fa9g9fys8WDg&pid=ImgRaw&r=0"
-              alt=""
-              className="w-8 h-8"
-            />
-          </a>
-        </div>
+        <div className="mt-auto mb-12 flex"></div>
       </div>
 
       <div
@@ -171,17 +147,17 @@ function App() {
               contact us.
             </p>
             <div class="flex mt-4 flex-wrap">
-              <div class="flex flex-col m-4 w-1/2">
+              {/* <div class="flex flex-col m-4 w-1/2">
                 <h5 class="dark:text-white font-bold text-xl">Address</h5>
                 <p class="dark:text-white">
                   David N. Akuamoah Wiredu Building Salisbury Aly.
                 </p>
-              </div>
+              </div> */}
 
               <div class="flex flex-col m-4 w-1/2">
                 <h5 class="dark:text-white font-bold text-xl">Phone</h5>
-                <p class="dark:text-white">+233 244982690</p>
-                <p class="dark:text-white">+233 269625787</p>
+                <p class="dark:text-white">+233 30 824 1194</p>
+                {/* <p class="dark:text-white">+233 269625787</p> */}
               </div>
 
               <div class="flex flex-col m-4">
@@ -235,7 +211,7 @@ function App() {
 
             <button
               type="submit"
-              class="dark:bg-black text-red-500 dark:text-white border-2 hover:text-white border-red-400 outline-none px-7 py-2 hover:bg-red-400 duration-300 mt-4"
+              class="dark:bg-black rounded-md text-red-500 dark:text-white border-2 hover:text-white border-red-400 outline-none px-7 py-2 hover:bg-red-400 duration-300 mt-4"
             >
               Send
             </button>
